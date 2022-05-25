@@ -1290,12 +1290,16 @@ a:hover {
 }
 
 body::-webkit-scrollbar {
-  width: 18px;  
-  background-color: transparent;             /* width of the entire scrollbar */
+  width: 18px;
+  background-color: transparent;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #9829ff;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #5a03ac;  /* creates padding around scroll thumb */
+  background-color: #9829ff;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #5a03ac;
+  /* creates padding around scroll thumb */
 }
