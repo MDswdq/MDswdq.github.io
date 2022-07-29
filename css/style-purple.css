@@ -1299,3 +1299,31 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid #5a03ac;  /* creates padding around scroll thumb */
 }
+
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.skills li{
+  letter-spacing: 2px;
+  width: max-content;
+  min-width: 40%;
+  text-align: center;
+  margin: 12px;
+  font-family: monospace, Helvetica, sans-serif !important;
+  font-size: 15px;
+  outline: 5px solid #8400ff;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 900;
+  background-color: #5a00ad46;
+}
+@media screen and (max-width:992px) {
+  .skills li{
+  min-width: 100%;
+}
+}
