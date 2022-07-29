@@ -1290,17 +1290,21 @@ a:hover {
 }
 
 body::-webkit-scrollbar {
-  width: 18px;  
-  background-color: transparent;             /* width of the entire scrollbar */
+  width: 18px;
+  background-color: transparent;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #9829ff;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #5a03ac;  /* creates padding around scroll thumb */
+  background-color: #9829ff;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #5a03ac;
+  /* creates padding around scroll thumb */
 }
 
-.skills{
+.skills {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1308,7 +1312,8 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   flex-direction: row-reverse;
 }
-.skills li{
+
+.skills li {
   letter-spacing: 2px;
   width: max-content;
   min-width: 40%;
@@ -1322,8 +1327,9 @@ body::-webkit-scrollbar-thumb {
   font-weight: 900;
   background-color: #5a00ad46;
 }
+
 @media screen and (max-width:992px) {
-  .skills li{
-  min-width: 100%;
-}
+  .skills li {
+    min-width: 100%;
+  }
 }
