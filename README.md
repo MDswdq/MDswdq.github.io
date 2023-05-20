@@ -37,9 +37,9 @@
 ## challenges of the project that we have to solve them:
 
 1. Image Cache:
-
+***
 2. Designer:
-
+***
 3. Type of Connection:
-
+***
 4. SignalR using Structure:
