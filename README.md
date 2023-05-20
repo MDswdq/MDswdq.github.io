@@ -46,7 +46,7 @@ like stack that it's capacity is `100` images
 it's mean that if you scroll up at the site, you just have last serie of images that got from server,
 if your scroll is long, you have to download again image and cache them
 
-```react
+```javaScript
 
     const [data, setData] = useState([]);
     const [index, setIndex] = useState(30);
