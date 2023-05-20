@@ -38,13 +38,51 @@
 
 ### 1. Image Cache:
 
+We Solve this Challeng with a way that on it, we get a list from server that includes `( for example: 100 )` images url
+
+at the next step we show `( for example: 15 )` images at the website and download other images to cache them at the memory
+like stack that it's capacity is `100` images
+
+it's mean that if you scroll up at the site, you just have last serie of images that got from server,
+if your scroll is long, you have to download again image and cache them
+
+```react
+
+    const [data, setData] = useState([]);
+    const [index, setIndex] = useState(30);
+
+    // =================================================================
+
+    const image_list = [
+        "http://movista.ir/image/x0bsgEeWqpvH8Lgwgmzi2tujlrV.jpg",
+        "http://movista.ir/image/nS3nhUZUSY8dWEsRmKILfiOC3F0.jpg",
+        "http://movista.ir/image/urb5Wf4yffJQ2KwAuSPxCbOM8HA.jpg",
+        "http://movista.ir/image/1YtsND7vSNymylnOSzgg3DdVFMB.jpg",
+        "http://movista.ir/image/iB64vpL3dIObOtMZgX3RqdVdQDc.jpg",
+        "http://movista.ir/image/8fUEFPUTF7kBMuKPiSQHxPvd8EZ.jpg",
+        "http://movista.ir/image/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+    ];
 
 
-***
+    useEffect(() => {
+        const temp = [];
+        image_list.map((item) =>
+            temp.push(
+                <div className={styles.thingCard}>
+                    <img alt="" src={item} width={"100%"} height={"100%"} />
+                </div>
+            )
+        );
+        setData(temp);
+    }, []);
+
+```
+
+---
 
 ### 2. Designer:
 
-***
+---
 
 ### 3. Type of Connection:
 
@@ -54,7 +92,7 @@ Alright, we decide to use both of SignalR and RestFull Connection in project
 
 -> use RestFull for `All Connection except component that use SignalR`
 
-***
+---
 
 ### 4. SignalR using Structure:
 
