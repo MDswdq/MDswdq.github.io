@@ -51,6 +51,7 @@
 Alright, we decide to use both of SignalR and RestFull Connection in project
 
 -> use SignalR for `Chat` and `Notification` and component to be realtime
+
 -> use RestFull for `All Connection except component that use SignalR`
 
 ***
