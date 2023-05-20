@@ -36,17 +36,17 @@
 
 ## challenges of the project that we have to solve them:
 
-1. Image Cache:
+### 1. Image Cache:
 
 
 
 ***
 
-2. Designer:
+### 2. Designer:
 
 ***
 
-3. Type of Connection:
+### 3. Type of Connection:
 
 Alright, we decide to use both of SignalR and RestFull Connection in project
 
@@ -56,6 +56,6 @@ Alright, we decide to use both of SignalR and RestFull Connection in project
 
 ***
 
-4. SignalR using Structure:
+### 4. SignalR using Structure:
 
 Structure and class of SignalR is in `src/Connection/SignalRConnectionServer.js`
